@@ -1,0 +1,14 @@
+:root{
+  --bg-color: #fff;
+  --text-color: #333;
+  --primary-color: #04ddb2;
+  --secondary-color: #767676;
+}
+
+.socialMediaFooter{
+  background-color: #04ddb2;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}

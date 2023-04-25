@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav>
-      <svg width="196px" height="52px" viewBox="0 0 196 52" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <svg id="logoNav" width="196px" height="52px" viewBox="0 0 196 52" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <path d="M14.7318403,-3.55271368e-15 L23.7444592,-3.13837756e-15 C27.3105342,-3.7934549e-15 28.6036791,0.371302445 29.9073828,1.06853082 C31.2110865,1.76575919 32.2342408,2.78891348 32.9314692,4.09261719 C33.6286976,5.39632089 34,6.68946584 34,10.2555408 L34,23.7444592 C34,27.3105342 33.6286976,28.6036791 32.9314692,29.9073828 C32.2342408,31.2110865 31.2110865,32.2342408 29.9073828,32.9314692 C28.6036791,33.6286976 27.3105342,34 23.7444592,34 L10.2555408,34 C6.68946584,34 5.39632089,33.6286976 4.09261719,32.9314692 C2.78891348,32.2342408 1.76575919,31.2110865 1.06853082,29.9073828 C0.371302445,28.6036791 -1.02954229e-16,27.3105342 1.77192988e-16,23.7444592 L0,15.0409072 L0,15.0409072 L14.7318403,-3.55271368e-15 Z" id="header-logo-path-1">
           </path>
@@ -30,7 +30,7 @@
         <li><a href="https://www.lobe.ai/blog">Blog</a></li>
         <li><a href="https://www.lobe.ai/docs/welcome/welcome">Help</a></li>
       </ul>
-      <button>Download</button>
+      <button class="downloadBtn">Download</button>
     </nav>
   </header>
   <main>
@@ -39,17 +39,19 @@
       <p>Build your first machine learning model in ten minutes. No code or experience required.</p>
     </section>
     <section>
-      <img src="./assets/video.jpg" alt="video">
+      <div id="imgCont">
+        <img src="./assets/video.jpg" alt="video">
+      </div>
     </section>
     <section>
       <h2>Train your app with Lobe</h2>
-      <button>Download</button>
+      <button class="downloadBtn">Download</button>
     </section>
   </main>
   <footer>
-    <div>
+    <div id="footerContainer">
       <div>
-        <svg width="196px" height="52px" viewBox="0 0 196 52" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg id="logoFooter" width="196px" height="52px" viewBox="0 0 196 52" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <path d="M14.7318403,-3.55271368e-15 L23.7444592,-3.13837756e-15 C27.3105342,-3.7934549e-15 28.6036791,0.371302445 29.9073828,1.06853082 C31.2110865,1.76575919 32.2342408,2.78891348 32.9314692,4.09261719 C33.6286976,5.39632089 34,6.68946584 34,10.2555408 L34,23.7444592 C34,27.3105342 33.6286976,28.6036791 32.9314692,29.9073828 C32.2342408,31.2110865 31.2110865,32.2342408 29.9073828,32.9314692 C28.6036791,33.6286976 27.3105342,34 23.7444592,34 L10.2555408,34 C6.68946584,34 5.39632089,33.6286976 4.09261719,32.9314692 C2.78891348,32.2342408 1.76575919,31.2110865 1.06853082,29.9073828 C0.371302445,28.6036791 -1.02954229e-16,27.3105342 1.77192988e-16,23.7444592 L0,15.0409072 L0,15.0409072 L14.7318403,-3.55271368e-15 Z" id="header-logo-path-1">
             </path>

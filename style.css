@@ -3,6 +3,76 @@
   --text-color: #333;
   --primary-color: #04ddb2;
   --secondary-color: #767676;
+  --font-family: LabGrotesqueLight,Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+*{
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+header{
+  position:sticky;
+  top: 0px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffffc5;
+  padding: 30px 100px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-family: LabGrotesqueMedium;
+  padding: 0 20px;
+}
+
+h1{
+  font-size: 80px;
+  font-family: LabGrotesqueBold;
+}
+
+h1 span{
+  color: var(--primary-color);
+  font-family: LabGrotesqueBold;
+}
+
+h2{
+  font-size: 80px;
+  font-family: LabGrotesqueBold;
+  margin-bottom: 50px;
+}
+
+section:first-of-type{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:first-of-type p{
+  font-size: 32px;
+}
+
+section:nth-of-type(3){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+img{
+  width: 60%;
+  border-radius: 30px;
 }
 
 .socialMediaFooter{
@@ -11,4 +81,59 @@
   width: 30px;
   height: 30px;
   padding: 5px;
+}
+
+.downloadBtn{
+  width: 129px;
+  height: 48px;
+  font-size: 18px;
+  font-family: LabGrotesqueMedium;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#logoNav, #logoFooter{
+  width: auto;
+  height: 21px;
+}
+
+#footerContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+#imgCont{
+  display: flex;
+  justify-content: center;
+}
+
+#imgCont::selection{
+  background: rgba(0,230,184,.2);
+}
+
+@font-face {
+  font-family: 'LabGrotesqueLight';
+  src: url(./assets/fonts/LabGrotesque-Light.ttf);
+}
+
+@font-face {
+  font-family: 'LabGrotesqueBold';
+  src: url(./assets/fonts/LabGrotesque-Bold.ttf);
+}
+@font-face {
+  font-family: 'LabGrotesqueMedium';
+  src: url(./assets/fonts/LabGrotesque-Medium.ttf);
+}
+@font-face {
+  font-family: 'LabGrotesqueRegular';
+  src: url(./assets/fonts/LabGrotesque-Regular.ttf);
+}
+@font-face {
+  font-family: 'LabGrotesqueThin';
+  src: url(./assets/fonts/LabGrotesque-Thin.ttf);
 }

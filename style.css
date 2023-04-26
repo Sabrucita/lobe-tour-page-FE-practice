@@ -20,8 +20,9 @@ header{
 nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #ffffffc5;
-  padding: 25px 100px;
+  padding: 15px 100px;
 }
 
 nav ul{
@@ -34,7 +35,7 @@ nav ul a{
   color: var(--secondary-color);
   font-size: 18px;
   font-family: LabGrotesqueMedium;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
 footer{
@@ -68,7 +69,7 @@ section:first-of-type{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 55px;
 }
 
 section:first-of-type p{

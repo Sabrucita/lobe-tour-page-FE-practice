@@ -212,6 +212,15 @@ img{
   img{
     width: 85%;
   }
+  #footerContainer{
+    justify-content: center;
+  }
+  #footerContainer div:not(#footerContainer div:last-of-type){
+    align-items: center;
+  }
+  #footerContainer ul {
+    text-align: center;
+  }
 }
 
 @font-face {

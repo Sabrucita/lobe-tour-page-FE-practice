@@ -43,6 +43,7 @@ footer{
 }
 
 h1{
+  text-align: center;
   font-size: 80px;
   font-family: LabGrotesqueBold;
 }
@@ -195,6 +196,21 @@ img{
 @media (max-width: 800px) {
   nav{
     display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  h1, h2{
+    font-size: 50px;
+  }
+  section:first-of-type p{
+    min-width: 250px;
+    font-size: 20px;
+    line-height: 1.8rem;
+    padding: 0 20px
+  }
+  img{
+    width: 85%;
   }
 }
 

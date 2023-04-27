@@ -202,6 +202,7 @@ img{
 @media (max-width: 650px) {
   h1, h2{
     font-size: 50px;
+    padding: 0 20px;
   }
   section:first-of-type p{
     min-width: 250px;

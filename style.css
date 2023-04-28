@@ -243,8 +243,9 @@ img{
   nav ul li{
     padding: 15px 0px;
   }
-  .downloadBtn:first-of-type{
-    margin-top: 30px;
+  #menuDownloadBtn{
+    z-index: 1;
+    margin-top: 331px;
     width: 100%;
   }
   #logoNav{

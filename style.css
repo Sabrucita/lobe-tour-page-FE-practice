@@ -15,6 +15,7 @@
 header{
   position:sticky;
   top: 0px;
+  backdrop-filter: blur(4px)
 }
 
 /*nav{
@@ -31,7 +32,7 @@ nav{
   grid-template-areas: 'logo links links button';
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffffc5;
+  background-color: #fffffff2;
   padding: 15px 100px;
 }
 
@@ -40,6 +41,7 @@ nav ul{
   display: flex;
   list-style: none;
   justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 
@@ -49,12 +51,6 @@ nav ul a{
   font-size: 18px;
   font-family: LabGrotesqueMedium;
 }
-
-/*#ulNavMobile{
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}*/
 
 footer{
   padding: 0 64px;
@@ -223,6 +219,7 @@ img{
 }
 
 #hamburgerMenu, #closeMenu{
+  grid-area: menuBtn;
   width: 20px;
   background-color: #eef0f2;
   padding: 10px;
@@ -232,29 +229,30 @@ img{
   nav{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    'logo button'
-    'links links';
+    'logo menuBtn'
+    'links links'
+    'button button';
     padding: 20px 30px;
   }
   nav ul{
     border-top: .5px solid rgba(0,0,0,.1);
     flex-direction: column;
     position: absolute;
-    width: 100%;
     gap: 10px;
     top: 60px;
     left: 0;
     right: 0;
     margin: 20px 0;
     padding: 20px 30px;
-    background-color: #ffffffc5
+    background-color: #fffffff2;
+    align-items: start;
   }
   nav ul li{
     padding: 15px 0px;
+    display: block;
   }
-
-  nav button{
-    display: none;
+  .downloadBtn:first-of-type{
+    width: 430px;
   }
   #logoNav{
     width: auto;

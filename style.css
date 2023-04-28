@@ -18,14 +18,6 @@ header{
   backdrop-filter: blur(4px)
 }
 
-/*nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffffc5;
-  padding: 15px 100px;
-}*/
-
 nav{
   display: grid;
   grid-template-columns: 0.5fr 4fr 1fr;
@@ -246,13 +238,14 @@ img{
     padding: 20px 30px;
     background-color: #fffffff2;
     align-items: start;
+    display: block;
   }
   nav ul li{
     padding: 15px 0px;
-    display: block;
   }
   .downloadBtn:first-of-type{
-    width: 430px;
+    margin-top: 30px;
+    width: 100%;
   }
   #logoNav{
     width: auto;
